@@ -1,2 +1,2 @@
-# AboutMe.github.io
+# AaravKumar.github.io
 Aarav Kumar's Page
