@@ -1,0 +1,143 @@
+.HeroContainer {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .hero-wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  
+  
+  .hero-wrapper canvas {     /* keeps the canvas stretched */
+    position: absolute !important;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .Hero {
+    flex: 1;
+    z-index: 1;
+  }
+  
+  .HeroContentBox {
+    max-width: 500px;
+    backdrop-filter: blur(4px);
+  }
+  
+
+.Hero .Title {
+    margin: 0 0 1.5rem 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.375rem;
+}
+
+.Hero .Subtitle {
+    margin: -0.5rem 0 0 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.Hero p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+.Intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+}
+
+.ImagePrefix {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--primary-color);
+}
+
+.Image {
+    display: inline-block;
+    margin-left: 1rem;
+    width: 36px;
+    height: 36px;
+    transform-origin: 70% 70%;
+    /* background-color: transparent; */
+    /* background: transparent !important; */
+    /* border-radius: 0 !important;  */
+    /* width: auto !important; */
+    /* height: auto !important; */
+}
+
+/* hero.css  ─ put this BELOW the theme import so it wins */
+.HeroContainer,        /* your own class */
+.section {             /* the theme wraps Section with this */
+  background: transparent !important;   /* kill the opaque fill */
+}
+
+@media (min-width: 768px) {
+    .Hero .Title {
+        font-size: 2.625rem;
+        line-height: 4rem;
+        margin-bottom: 0;
+    }
+
+    .Hero .Subtitle {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .ImagePrefix {
+        font-size: 2.625rem;
+        line-height: 4rem;
+    }
+
+    .Image {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.heroImageCont {
+    flex: 33%;
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 5rem 3rem 0;
+}
+
+.heroImageCont .heroImage {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* @media (max-width: 768px) {
+    .heroImageCont {
+        max-width: 140px;
+        padding: 0 0 2rem 0;
+    }
+
+    .HeroContainer {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .Hero {
+        display: block;
+    }
+} */

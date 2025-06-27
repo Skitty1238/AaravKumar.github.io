@@ -1,0 +1,61 @@
+import React from 'react';
+import { Animation } from 'gatsby-theme-portfolio-minimal/src/components/Animation';
+import { Section } from 'gatsby-theme-portfolio-minimal/src/components/Section';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { Button, ButtonType } from 'gatsby-theme-portfolio-minimal/src/components/Button';
+import { PageSection } from 'gatsby-theme-portfolio-minimal/src/types';
+import { useLocalDataSource } from 'gatsby-theme-portfolio-minimal/src/sections/Interests/data';
+import './interests.css';
+
+export function InterestsSection(props: PageSection): React.ReactElement {
+    const response = useLocalDataSource();
+    const data = response.allInterestsJson.sections[0];
+    // const shouldShowButton = data.button.visible !== false;
+    // const initiallyShownInterests = data.button.initiallyShownInterests ?? 5;
+    // const [shownInterests, setShownInterests] = React.useState<number>(
+    //     shouldShowButton ? initiallyShownInterests : data.interests.length,
+    // );
+    const [shownInterests, setShownInterests] = React.useState<number>(data.interests.length);
+
+
+    function loadMoreHandler() {
+        setShownInterests(data.interests.length);
+    }
+
+    return (
+        <Animation type="fadeUp">
+            <Section anchor={props.sectionId} heading={props.heading}>
+                <div className="Interests">
+                    {data.interests.slice(0, shownInterests).map((interest, key) => {
+                        return (
+                            <div key={key} className="Interest">
+                                <Animation type="scaleIn" delay={key * 100}>
+                                    <>
+                                        {interest.image.src && (
+                                            <GatsbyImage
+                                                image={interest.image.src.childImageSharp.gatsbyImageData}
+                                                className="Icon"
+                                                alt={interest.image.alt || `Interest ${interest.label}`}
+                                            />
+                                        )}
+                                        {interest.label}
+                                    </>
+                                </Animation>
+                            </div>
+                        );
+                    })}
+
+                    {/* {shouldShowButton && shownInterests < data.interests.length && (
+                        <Animation type="scaleIn" delay={(shownInterests + 1) * 100}>
+                            <Button
+                                type={ButtonType.BUTTON}
+                                onClickHandler={loadMoreHandler}
+                                label={data.button.label}
+                            />
+                        </Animation>
+                    )} */}
+                </div>
+            </Section>
+        </Animation>
+    );
+}

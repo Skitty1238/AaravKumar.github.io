@@ -1,0 +1,22 @@
+{
+  "intro": "Hi, I'm Aarav!",
+  "heroPhoto": {
+    "src": "../../images/lego-dummy.png",
+    "alt": "My Photo"
+  },
+  "image": {
+    "src": "../../images/waving-hand.png",
+    "alt": "Waving Hand Emoji"
+  },
+  "title": "",
+  "subtitle": {
+    "prefix": "Welcome to ",
+    "highlight": "my website :)",
+    "suffix": ""
+  },
+  "description": "Get to learn a little more about me and my work below.",
+  "socialProfiles": {
+    "from": ["LinkedIn", "Github", "Mail"],
+    "showIcons": false
+  }
+}

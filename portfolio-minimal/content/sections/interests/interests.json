@@ -1,0 +1,142 @@
+{
+  "interests": [
+    {
+      "label": "TypeScript",
+      "image": {
+        "src": "../../images/icons/typescript.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Python",
+      "image": {
+        "src": "../../images/icons/python.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Java",
+      "image": {
+        "src": "../../images/icons/java.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "HTML/CSS",
+      "image": {
+        "src": "../../images/icons/web.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "React",
+      "image": {
+        "src": "../../images/icons/atom.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Express.js",
+      "image": {
+        "src": "../../images/icons/ex.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Node.js",
+      "image": {
+        "src": "../../images/icons/nodejs.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "MongoDB",
+      "image": {
+        "src": "../../images/icons/leaf.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Firebase",
+      "image": {
+        "src": "../../images/icons/security-shield.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Postman",
+      "image": {
+        "src": "../../images/icons/postman.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "SQL",
+      "image": {
+        "src": "../../images/icons/sql.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "C#",
+      "image": {
+        "src": "../../images/icons/c.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Unity",
+      "image": {
+        "src": "../../images/icons/unity.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Bezi",
+      "image": {
+        "src": "../../images/icons/bezi.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Adobe Suite",
+      "image": {
+        "src": "../../images/icons/acrobat.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Figma",
+      "image": {
+        "src": "../../images/icons/figma.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Blender",
+      "image": {
+        "src": "../../images/icons/blender.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Tableau",
+      "image": {
+        "src": "../../images/icons/tableau.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Meta XR",
+      "image": {
+        "src": "../../images/icons/meta.png",
+        "alt": ""
+      }
+    }
+  ],
+  "button": {
+    "visible": true,
+    "label": "+ Load More",
+    "initiallyShownInterests": 5
+  }
+}

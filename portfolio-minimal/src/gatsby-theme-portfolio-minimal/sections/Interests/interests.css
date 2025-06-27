@@ -1,0 +1,223 @@
+@keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .Interests {
+    display: grid;
+    grid-template-columns: repeat(1, 15rem);
+    grid-auto-flow: row;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  
+  /* Base button style */
+.Interest {
+    width: 13.5rem;
+    height: 3rem;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    background: var(--card-background-color);
+    color: #111;
+    border: 5px solid #000;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    /* border: 3.5px solid #67321b; */
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.06);
+  }
+  
+  .Interest:hover {
+    transform: scale(1.05) rotate(-1deg);
+  }
+  
+  /* Themed button variations */
+.Interest:nth-child(20) {
+  background: linear-gradient(270deg, #fcecd2, #ffe5b4);
+  background-size: 400% 400%;
+  animation: gradientShift 3s ease-in-out infinite;
+  border: 3.5px solid #e2c79a;
+}
+
+.Interest:nth-child(19) {
+  background: linear-gradient(270deg, #ffe5b4, #f8cfa0);
+  background-size: 400% 400%;
+  animation: gradientShift 4s ease-in-out infinite;
+  border: 3.5px solid #dab07f;
+}
+
+.Interest:nth-child(18) {
+  background: linear-gradient(270deg, #f8cfa0, #edbb88);
+  background-size: 400% 400%;
+  animation: gradientShift 5s ease-in-out infinite;
+  border: 3.5px solid #c79463;
+}
+
+.Interest:nth-child(17) {
+  background: linear-gradient(270deg, #edbb88, #e5aa7a);
+  background-size: 400% 400%;
+  animation: gradientShift 6s ease-in-out infinite;
+  border: 3.5px solid #b37853;
+}
+
+.Interest:nth-child(16) {
+  background: linear-gradient(270deg, #ffe5c0, #fcd8a6);
+  background-size: 400% 400%;
+  animation: gradientShift 3s ease-in-out infinite;
+  border: 3.5px solid #d7af7d;
+}
+
+.Interest:nth-child(15) {
+  background: linear-gradient(270deg, #fcd8a6, #eab27c);
+  background-size: 400% 400%;
+  animation: gradientShift 4s ease-in-out infinite;
+  border: 3.5px solid #c48f5b;
+}
+
+.Interest:nth-child(14) {
+  background: linear-gradient(270deg, #eab27c, #d89b6a);
+  background-size: 400% 400%;
+  animation: gradientShift 5s ease-in-out infinite;
+  border: 3.5px solid #a96b3f;
+}
+
+.Interest:nth-child(13) {
+  background: linear-gradient(270deg, #d89b6a, #c28b6d);
+  background-size: 400% 400%;
+  animation: gradientShift 6s ease-in-out infinite;
+  border: 3.5px solid #875132;
+}
+
+.Interest:nth-child(12) {
+  background: linear-gradient(270deg, #f7e3c1, #f3c8a1);
+  background-size: 400% 400%;
+  animation: gradientShift 3s ease-in-out infinite;
+  border: 3.5px solid #cda177;
+}
+
+.Interest:nth-child(11) {
+  background: linear-gradient(270deg, #f3c8a1, #e1aa81);
+  background-size: 400% 400%;
+  animation: gradientShift 4s ease-in-out infinite;
+  border: 3.5px solid #ad7349;
+}
+
+.Interest:nth-child(10) {
+  background: linear-gradient(270deg, #e1aa81, #c9956f);
+  background-size: 400% 400%;
+  animation: gradientShift 5s ease-in-out infinite;
+  border: 3.5px solid #905c36;
+}
+
+.Interest:nth-child(9) {
+  background: linear-gradient(270deg, #c9956f, #b07a5e);
+  background-size: 400% 400%;
+  animation: gradientShift 6s ease-in-out infinite;
+  border: 3.5px solid #75492a;
+}
+
+.Interest:nth-child(8) {
+  background: linear-gradient(270deg, #fce0b5, #f7cda2);
+  background-size: 400% 400%;
+  animation: gradientShift 3s ease-in-out infinite;
+  border: 3.5px solid #d8aa74;
+}
+
+.Interest:nth-child(7) {
+  background: linear-gradient(270deg, #f7cda2, #e6ac84);
+  background-size: 400% 400%;
+  animation: gradientShift 4s ease-in-out infinite;
+  border: 3.5px solid #af7343;
+}
+
+.Interest:nth-child(6) {
+  background: linear-gradient(270deg, #e6ac84, #cd9270);
+  background-size: 400% 400%;
+  animation: gradientShift 5s ease-in-out infinite;
+  border: 3.5px solid #8d502d;
+}
+
+.Interest:nth-child(5) {
+  background: linear-gradient(270deg, #cd9270, #a36b55);
+  background-size: 400% 400%;
+  animation: gradientShift 6s ease-in-out infinite;
+  border: 3.5px solid #703a23;
+}
+
+.Interest:nth-child(4) {
+  background: linear-gradient(270deg, #f5d4ae, #e7b88d);
+  background-size: 400% 400%;
+  animation: gradientShift 3s ease-in-out infinite;
+  border: 3.5px solid #c88e57;
+}
+
+.Interest:nth-child(3) {
+  background: linear-gradient(270deg, #e7b88d, #cba078);
+  background-size: 400% 400%;
+  animation: gradientShift 4s ease-in-out infinite;
+  border: 3.5px solid #a16b3e;
+}
+
+.Interest:nth-child(2) {
+  background: linear-gradient(270deg, #cba078, #a96e58);
+  background-size: 400% 400%;
+  animation: gradientShift 5s ease-in-out infinite;
+  border: 3.5px solid #703a25;
+}
+
+.Interest:nth-child(1) {
+  background: linear-gradient(270deg, #a96e58, #8f5947);
+  background-size: 400% 400%;
+  animation: gradientShift 6s ease-in-out infinite;
+  border: 3.5px solid #562e1e;
+}
+  
+  .Icon {
+    margin-right: 0.75rem;
+    filter: grayscale(20%) brightness(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .Interest:hover .Icon {
+    transform: rotate(4deg) scale(1.1);
+  }
+  
+  
+  
+  @media (min-width: 520px) {
+    .Interests {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .Interest {
+        width: 100%;
+        max-width: none;
+    }
+  }
+  
+  @media (min-width: 750px) {
+    .Interests {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .Interest {
+        width: 100%;
+        max-width: none;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .Interests {
+      grid-template-columns: repeat(4, 13.5rem);
+    }
+  }
+  
