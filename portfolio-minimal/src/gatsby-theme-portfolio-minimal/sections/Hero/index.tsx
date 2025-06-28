@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { Animation } from 'gatsby-theme-portfolio-minimal/src/components/Animation';
 import { Section } from 'gatsby-theme-portfolio-minimal/src/components/Section';
@@ -21,6 +21,16 @@ export function HeroSection(props: PageSection): React.ReactElement {
         console.log("Loading slim engine...");
         await loadSlim(engine);
       }, []);
+
+    const [showParticles, setShowParticles] = useState(0);
+
+    useEffect(() => {
+    const timeout = setTimeout(() => {
+        setShowParticles(1);
+    }, 550); // just enough for layout to settle
+
+    return () => clearTimeout(timeout);
+    }, []);
       
     return (
         <div className="hero-wrapper">
@@ -34,12 +44,12 @@ export function HeroSection(props: PageSection): React.ReactElement {
                     particles: {
                     number: { value: 15 },
                     color: { value: ['#341A04', '#733907', '#385400', '#224003'] },
-                    opacity: { value: 1 },
+                    opacity: { value: showParticles },
                     size: { value: 38, random: false },
                     move: {
                         enable: true,
                         direction: 'bottom',
-                        speed: 2, 
+                        speed: 1.5, 
                         straight: false, 
                         gravity: {
                           enable: true,
@@ -112,11 +122,7 @@ export function HeroSection(props: PageSection): React.ReactElement {
                                 {data.intro && <span className="ImagePrefix">{data.intro}</span>}
                                 {data.image?.src && (
                                     <Animation className="Image" type="waving-hand" duration={2500} iterationCount={3}>
-                                        <GatsbyImage
-                                            image={data.image.src.childImageSharp.gatsbyImageData}
-                                            alt={data.image.alt || `Intro Image`}
-                                            loading="eager"
-                                        />
+                                        <span className="Emoji" role="img" aria-label="waving hand">👋🏽</span>
                                     </Animation>
                                 )}
                             </div>

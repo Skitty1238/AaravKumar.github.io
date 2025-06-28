@@ -182,6 +182,77 @@
   animation: gradientShift 6s ease-in-out infinite;
   border: 3.5px solid #562e1e;
 }
+
+.Spiral {
+    position: absolute;
+    top: 270%;
+    width: 550px;
+    height: 550px;
+    background-image: url('../../../../content/images/spiral.png'); /* adjust path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
+    animation: spin 10s linear infinite;
+    z-index: 10;
+    /* opacity: 0.4; */
+    pointer-events: none;
+  }
+  
+  .SpiralLeft {
+    left: -350px; /* half the width to cut it in half */
+  }
+  
+  .SpiralRight {
+    right: -350px;
+  }
+  
+  @keyframes spin {
+    0% { transform: translateY(-50%) rotate(0deg); }
+    100% { transform: translateY(-50%) rotate(360deg); }
+  }
+
+  .Leaf {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.8;
+  }
+  
+  .LeafLeft1 {
+    top: 230%;
+    left: 30px;
+    background-image: url('../../../../content/images/leaves/leafGreen.png');
+    transform: rotate(-20deg);
+  }
+  
+  .LeafRight1 {
+    top: 250%;
+    left: 100px;
+    background-image: url('../../../../content/images/leaves/leafRed.png');
+    transform: rotate(10deg);
+  }
+  
+  .LeafLeft2 {
+    top: 270%;
+    left: 35px;
+    background-image: url('../../../../content/images/leaves/leafOrange.png');
+    transform: rotate(15deg);
+  }
+
+  .LeafRight2 {
+    top: 290%;
+    left: 90px;
+    background-image: url('../../../../content/images/leaves/leafRed.png');
+    transform: rotate(-25deg);
+  }
+  
+  
   
   .Icon {
     margin-right: 0.75rem;

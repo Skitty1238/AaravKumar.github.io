@@ -25,6 +25,14 @@ export function InterestsSection(props: PageSection): React.ReactElement {
     return (
         <Animation type="fadeUp">
             <Section anchor={props.sectionId} heading={props.heading}>
+                {/* <div className="Spiral SpiralLeft" />
+                <div className="Spiral SpiralRight" /> */}
+                <div className="Leaf LeafLeft1" />
+                <div className="Leaf LeafLeft2" />
+                <div className="Leaf LeafRight1" />
+                <div className="Leaf LeafRight2" />
+
+
                 <div className="Interests">
                     {data.interests.slice(0, shownInterests).map((interest, key) => {
                         return (
