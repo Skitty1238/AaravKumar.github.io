@@ -46,18 +46,35 @@ function useInView(threshold = 0.1) {
     return matches;
 }
 
+
+
 export function InterestsSection(props: PageSection): React.ReactElement {
     const response = useLocalDataSource();
     const data = response.allInterestsJson.sections[0];
-    // const shouldShowButton = data.button.visible !== false;
-    // const initiallyShownInterests = data.button.initiallyShownInterests ?? 5;
-    // const [shownInterests, setShownInterests] = React.useState<number>(
-    //     shouldShowButton ? initiallyShownInterests : data.interests.length,
-    // );
-    const [shownInterests, setShownInterests] = React.useState<number>(data.interests.length);
+    const isSmallScreen = useMediaQuery("(max-width: 519px)");
+
+    const initiallyShownInterests = 3;
+    const [shownInterests, setShownInterests] = React.useState<number>(
+    isSmallScreen ? initiallyShownInterests : data.interests.length
+    );
+
+    useEffect(() => {
+    setShownInterests(isSmallScreen ? initiallyShownInterests : data.interests.length);
+    }, [isSmallScreen, initiallyShownInterests, data.interests.length]);
+
+    // show the button only on very narrow viewports
+    const shouldShowButton =
+    isSmallScreen && shownInterests < data.interests.length && data.button.visible !== false;
+
+        
+    
+    
     const [leafRef, inView] = useInView();
     const showWideLeaves = useMediaQuery("(min-width: 1400px)");
     const leafDelayBase = showWideLeaves ? 1000 : 0;
+
+
+    
 
     function loadMoreHandler() {
         setShownInterests(data.interests.length);
@@ -66,8 +83,6 @@ export function InterestsSection(props: PageSection): React.ReactElement {
     return (
         <Animation type="fadeUp">
             <Section anchor={props.sectionId} heading={props.heading}>
-                {/* <div className="Spiral SpiralLeft" />
-                <div className="Spiral SpiralRight" /> */}
 
                 <div className="LeavesWrapper" ref={leafRef}>
                     <div className={`Leaf LeafLeft1 ${inView ? 'fade-down' : ''}`} />
@@ -101,15 +116,17 @@ export function InterestsSection(props: PageSection): React.ReactElement {
                         );
                     })}
 
-                    {/* {shouldShowButton && shownInterests < data.interests.length && (
+                    {shouldShowButton && shownInterests < data.interests.length && (
                         <Animation type="scaleIn" delay={(shownInterests + 1) * 100}>
+                            <div className="loadMore">
                             <Button
                                 type={ButtonType.BUTTON}
                                 onClickHandler={loadMoreHandler}
                                 label={data.button.label}
                             />
+                            </div>
                         </Animation>
-                    )} */}
+                    )}
                 </div>
             </Section>
         </Animation>

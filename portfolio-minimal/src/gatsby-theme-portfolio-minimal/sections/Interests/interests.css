@@ -42,31 +42,6 @@
     transform: scale(1.05) rotate(-1deg);
   } 
   
-
-.Spiral {
-    position: absolute;
-    top: 270%;
-    width: 550px;
-    height: 550px;
-    background-image: url('../../../../content/images/spiral.png'); /* adjust path */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: translateY(-50%);
-    animation: spin 10s linear infinite;
-    z-index: 10;
-    /* opacity: 0.4; */
-    pointer-events: none;
-  }
-  
-  .SpiralLeft {
-    left: -350px; /* half the width to cut it in half */
-  }
-  
-  .SpiralRight {
-    right: -350px;
-  }
-  
   @keyframes spin {
     0% { transform: translateY(-50%) rotate(0deg); }
     100% { transform: translateY(-50%) rotate(360deg); }
@@ -184,8 +159,166 @@
   .Interest:hover .Icon {
     transform: rotate(4deg) scale(1.1);
   }
+
+  @media (min-width: 0px) {
+    .Interests {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .Interest {
+        width: 100%;
+        max-width: none;
+    }
+
+    .Interests button {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0.75rem 0;
+      }
+
+
+  .Interest:nth-child(1)  {  /* darkest */
+    background: linear-gradient(270deg, #985e4b, #8f5947);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease-in-out infinite;
+    border: 3.5px solid #6b4235;
+  }
   
+  .Interest:nth-child(2)  {
+    background: linear-gradient(270deg, #a26a52, #985e4b);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease-in-out infinite;
+    border: 3.5px solid #724638;
+  }
   
+  .Interest:nth-child(3)  {
+    background: linear-gradient(270deg, #ab7559, #a16a51);
+    background-size: 400% 400%;
+    animation: gradientShift 6s ease-in-out infinite;
+    border: 3.5px solid #784b3c;
+  }
+  
+  .Interest:nth-child(4)  {
+    background: linear-gradient(270deg, #b17d61, #ab7458);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease-in-out infinite;
+    border: 3.5px solid #7f4f3f;
+  }
+  
+  .Interest:nth-child(5)  {
+    background: linear-gradient(270deg, #b98768, #b47e5f);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease-in-out infinite;
+    border: 3.5px solid #835546;
+  }
+  
+  .Interest:nth-child(6)  {
+    background: linear-gradient(270deg, #c1916f, #bd8866);
+    background-size: 400% 400%;
+    animation: gradientShift 6s ease-in-out infinite;
+    border: 3.5px solid #895a49;
+  }
+  
+  .Interest:nth-child(7)  {
+    background: linear-gradient(270deg, #c99b76, #c1916f);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease-in-out infinite;
+    border: 3.5px solid #8e5f4d;
+  }
+  
+  .Interest:nth-child(8)  {
+    background: linear-gradient(270deg, #d1a57d, #c99b76);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease-in-out infinite;
+    border: 3.5px solid #946552;
+  }
+  
+  .Interest:nth-child(9)  {
+    background: linear-gradient(270deg, #d9af84, #d1a57d);
+    background-size: 400% 400%;
+    animation: gradientShift 6s ease-in-out infinite;
+    border: 3.5px solid #9a6a57;
+  }
+  
+  .Interest:nth-child(10) {
+    background: linear-gradient(270deg, #e1b98b, #d9af84);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease-in-out infinite;
+    border: 3.5px solid #9f705d;
+  }
+  
+  .Interest:nth-child(11) {
+    background: linear-gradient(270deg, #e8c294, #e1b98b);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease-in-out infinite;
+    border: 3.5px solid #a57663;
+  }
+  
+  .Interest:nth-child(12) {
+    background: linear-gradient(270deg, #edc99b, #e8c294);
+    background-size: 400% 400%;
+    animation: gradientShift 6s ease-in-out infinite;
+    border: 3.5px solid #ab7c68;
+  }
+  
+  .Interest:nth-child(13) {
+    background: linear-gradient(270deg, #f1cfa1, #edc99b);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease-in-out infinite;
+    border: 3.5px solid #b0826d;
+  }
+  
+  .Interest:nth-child(14) {
+    background: linear-gradient(270deg, #f5d5a7, #f1cfa1);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease-in-out infinite;
+    border: 3.5px solid #b68872;
+  }
+  
+  .Interest:nth-child(15) {
+    background: linear-gradient(270deg, #f4d1a0, #dfad82);
+    background-size: 400% 400%;
+    animation: gradientShift 6s ease-in-out infinite;
+    border: 3.5px solid #bc8e78;
+  }
+  
+  .Interest:nth-child(16) {
+    background: linear-gradient(270deg, #f6d4a2, #e1b084);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease-in-out infinite;
+    border: 3.5px solid #c2947d;
+  }
+  
+  .Interest:nth-child(17) {
+    background: linear-gradient(270deg, #f7d7a4, #e3b385);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease-in-out infinite;
+    border: 3.5px solid #c89a82;
+  }
+  
+  .Interest:nth-child(18) {
+    background: linear-gradient(270deg, #f9daa5, #e5b685);
+    background-size: 400% 400%;
+    animation: gradientShift 6s ease-in-out infinite;
+    border: 3.5px solid #cfa087;
+  }
+  
+  .Interest:nth-child(19) {
+    background: linear-gradient(270deg, #fbdca6, #e7b985);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease-in-out infinite;
+    border: 3.5px solid #d5a68d;
+  }
+  
+  .Interest:nth-child(20) {  /* lightest target tile */
+    background: linear-gradient(270deg, #fcd8a6, #eab27c);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease-in-out infinite;
+    border: 3.5px solid #c48f5b;
+  }
+  
+    
+  }
   
   @media (min-width: 520px) {
     .Interests {
@@ -195,6 +328,147 @@
         width: 100%;
         max-width: none;
     }
+
+    /* Row 1 — darkest → lighter */
+    .Interest:nth-child(1)  {
+        background: linear-gradient(270deg, #a96e58, #8f5947);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #562e1e;
+    }
+    .Interest:nth-child(2)  {
+        background: linear-gradient(270deg, #cd9270, #a36b55);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #703a23;
+    }
+    
+    /* Row 2 */
+    .Interest:nth-child(3)  {
+        background: linear-gradient(270deg, #c9956f, #b07a5e);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #75492a;
+    }
+    .Interest:nth-child(4)  {
+        background: linear-gradient(270deg, #d89b6a, #c28b6d);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #875132;
+    }
+    
+    /* Row 3 */
+    .Interest:nth-child(5)  {
+        background: linear-gradient(270deg, #cba078, #a96e58);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #703a25;
+    }
+    .Interest:nth-child(6)  {
+        background: linear-gradient(270deg, #e1aa81, #c9956f);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #905c36;
+    }
+    
+    /* Row 4 */
+    .Interest:nth-child(7)  {
+        background: linear-gradient(270deg, #e6ac84, #cd9270);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #8d502d;
+    }
+    .Interest:nth-child(8)  {
+        background: linear-gradient(270deg, #eab27c, #d89b6a);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #a96b3f;
+    }
+    
+    /* Row 5 */
+    .Interest:nth-child(9)  {
+        background: linear-gradient(270deg, #e7b88d, #cba078);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #a16b3e;
+    }
+    .Interest:nth-child(10) {
+        background: linear-gradient(270deg, #edbb88, #e5aa7a);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #b37853;
+    }
+    
+    /* Row 6 */
+    .Interest:nth-child(11) {
+        background: linear-gradient(270deg, #f3c8a1, #e1aa81);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #ad7349;
+    }
+    .Interest:nth-child(12) {
+        background: linear-gradient(270deg, #f7cda2, #e6ac84);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #af7343;
+    }
+    
+    /* Row 7 */
+    .Interest:nth-child(13) {
+        background: linear-gradient(270deg, #f8cfa0, #edbb88);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #c79463;
+    }
+    .Interest:nth-child(14) {
+        background: linear-gradient(270deg, #f5d4ae, #e7b88d);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #c88e57;
+    }
+    
+    /* Row 8 */
+    .Interest:nth-child(15) {
+        background: linear-gradient(270deg, #fcd8a6, #eab27c);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #c48f5b;
+    }
+    .Interest:nth-child(16) {
+        background: linear-gradient(270deg, #ffe5c0, #fcd8a6);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #d7af7d;
+    }
+    
+    /* Row 9 */
+    .Interest:nth-child(17) {
+        background: linear-gradient(270deg, #ffe5b4, #f8cfa0);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #dab07f;
+    }
+    .Interest:nth-child(18) {
+        background: linear-gradient(270deg, #fce0b5, #f7cda2);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #d8aa74;
+    }
+    
+    /* Row 10 — lightest */
+    .Interest:nth-child(19) {
+        background: linear-gradient(270deg, #fcecd2, #ffe5b4);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #e2c79a;
+    }
+    .Interest:nth-child(20) {
+        background: linear-gradient(270deg, #fff0d9, #fcecd2);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #ecd3aa;
+    }
+  
   }
   
   @media (min-width: 750px) {
@@ -207,10 +481,10 @@
     }
 
     .Interest:nth-child(19) {
-        background: linear-gradient(270deg, #ac8a74, #c6a67e);
+        background: linear-gradient(270deg, #e7b08c, #f5ca95);
         background-size: 400% 400%;
         animation: gradientShift 4s ease-in-out infinite;
-        border: 3.5px solid #866046;
+        border: 3.5px solid #d8986d;
       } 
       
       .Interest:nth-child(18) {
@@ -232,7 +506,7 @@
         background: linear-gradient(270deg, #d1a182, #e4bc8b);
         background-size: 400% 400%;
         animation: gradientShift 4s ease-in-out infinite;
-        border: 3.5px solid #b87646;
+        border: 3.5px solid #c7875a;
       }     
       
       .Interest:nth-child(15) {
@@ -250,7 +524,7 @@
       }
       
       .Interest:nth-child(13) {
-        background: linear-gradient(270deg, #edbb88, #e5aa7a);
+        background: linear-gradient(270deg, #cea276, #cb976d);
         background-size: 400% 400%;
         animation: gradientShift 6s ease-in-out infinite;
         border: 3.5px solid #b37853;
@@ -492,7 +766,7 @@
 
   @media (max-width: 1400px) {
     .Leaf {
-        display: none;   /* or visibility: hidden; */
+        display: none;
         visibility: hidden;
       }
   }
