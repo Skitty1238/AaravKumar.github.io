@@ -5,7 +5,7 @@
 }
 
 .AboutContainer {
-    position: relative; /* So background image positions inside here */
+    position: relative;
   }
 
   @keyframes fadeLeftOnce {

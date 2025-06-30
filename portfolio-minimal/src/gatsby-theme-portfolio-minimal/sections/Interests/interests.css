@@ -40,148 +40,8 @@
   
   .Interest:hover {
     transform: scale(1.05) rotate(-1deg);
-  }
+  } 
   
-  /* Themed button variations */
-.Interest:nth-child(20) {
-  background: linear-gradient(270deg, #fcecd2, #ffe5b4);
-  background-size: 400% 400%;
-  animation: gradientShift 3s ease-in-out infinite;
-  border: 3.5px solid #e2c79a;
-}
-
-.Interest:nth-child(19) {
-  background: linear-gradient(270deg, #ffe5b4, #f8cfa0);
-  background-size: 400% 400%;
-  animation: gradientShift 4s ease-in-out infinite;
-  border: 3.5px solid #dab07f;
-}
-
-.Interest:nth-child(18) {
-  background: linear-gradient(270deg, #f8cfa0, #edbb88);
-  background-size: 400% 400%;
-  animation: gradientShift 5s ease-in-out infinite;
-  border: 3.5px solid #c79463;
-}
-
-.Interest:nth-child(17) {
-  background: linear-gradient(270deg, #edbb88, #e5aa7a);
-  background-size: 400% 400%;
-  animation: gradientShift 6s ease-in-out infinite;
-  border: 3.5px solid #b37853;
-}
-
-.Interest:nth-child(16) {
-  background: linear-gradient(270deg, #ffe5c0, #fcd8a6);
-  background-size: 400% 400%;
-  animation: gradientShift 3s ease-in-out infinite;
-  border: 3.5px solid #d7af7d;
-}
-
-.Interest:nth-child(15) {
-  background: linear-gradient(270deg, #fcd8a6, #eab27c);
-  background-size: 400% 400%;
-  animation: gradientShift 4s ease-in-out infinite;
-  border: 3.5px solid #c48f5b;
-}
-
-.Interest:nth-child(14) {
-  background: linear-gradient(270deg, #eab27c, #d89b6a);
-  background-size: 400% 400%;
-  animation: gradientShift 5s ease-in-out infinite;
-  border: 3.5px solid #a96b3f;
-}
-
-.Interest:nth-child(13) {
-  background: linear-gradient(270deg, #d89b6a, #c28b6d);
-  background-size: 400% 400%;
-  animation: gradientShift 6s ease-in-out infinite;
-  border: 3.5px solid #875132;
-}
-
-.Interest:nth-child(12) {
-  background: linear-gradient(270deg, #f7e3c1, #f3c8a1);
-  background-size: 400% 400%;
-  animation: gradientShift 3s ease-in-out infinite;
-  border: 3.5px solid #cda177;
-}
-
-.Interest:nth-child(11) {
-  background: linear-gradient(270deg, #f3c8a1, #e1aa81);
-  background-size: 400% 400%;
-  animation: gradientShift 4s ease-in-out infinite;
-  border: 3.5px solid #ad7349;
-}
-
-.Interest:nth-child(10) {
-  background: linear-gradient(270deg, #e1aa81, #c9956f);
-  background-size: 400% 400%;
-  animation: gradientShift 5s ease-in-out infinite;
-  border: 3.5px solid #905c36;
-}
-
-.Interest:nth-child(9) {
-  background: linear-gradient(270deg, #c9956f, #b07a5e);
-  background-size: 400% 400%;
-  animation: gradientShift 6s ease-in-out infinite;
-  border: 3.5px solid #75492a;
-}
-
-.Interest:nth-child(8) {
-  background: linear-gradient(270deg, #fce0b5, #f7cda2);
-  background-size: 400% 400%;
-  animation: gradientShift 3s ease-in-out infinite;
-  border: 3.5px solid #d8aa74;
-}
-
-.Interest:nth-child(7) {
-  background: linear-gradient(270deg, #f7cda2, #e6ac84);
-  background-size: 400% 400%;
-  animation: gradientShift 4s ease-in-out infinite;
-  border: 3.5px solid #af7343;
-}
-
-.Interest:nth-child(6) {
-  background: linear-gradient(270deg, #e6ac84, #cd9270);
-  background-size: 400% 400%;
-  animation: gradientShift 5s ease-in-out infinite;
-  border: 3.5px solid #8d502d;
-}
-
-.Interest:nth-child(5) {
-  background: linear-gradient(270deg, #cd9270, #a36b55);
-  background-size: 400% 400%;
-  animation: gradientShift 6s ease-in-out infinite;
-  border: 3.5px solid #703a23;
-}
-
-.Interest:nth-child(4) {
-  background: linear-gradient(270deg, #f5d4ae, #e7b88d);
-  background-size: 400% 400%;
-  animation: gradientShift 3s ease-in-out infinite;
-  border: 3.5px solid #c88e57;
-}
-
-.Interest:nth-child(3) {
-  background: linear-gradient(270deg, #e7b88d, #cba078);
-  background-size: 400% 400%;
-  animation: gradientShift 4s ease-in-out infinite;
-  border: 3.5px solid #a16b3e;
-}
-
-.Interest:nth-child(2) {
-  background: linear-gradient(270deg, #cba078, #a96e58);
-  background-size: 400% 400%;
-  animation: gradientShift 5s ease-in-out infinite;
-  border: 3.5px solid #703a25;
-}
-
-.Interest:nth-child(1) {
-  background: linear-gradient(270deg, #a96e58, #8f5947);
-  background-size: 400% 400%;
-  animation: gradientShift 6s ease-in-out infinite;
-  border: 3.5px solid #562e1e;
-}
 
 .Spiral {
     position: absolute;
@@ -211,7 +71,23 @@
     0% { transform: translateY(-50%) rotate(0deg); }
     100% { transform: translateY(-50%) rotate(360deg); }
   }
+  @keyframes fadeDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px) rotate(var(--rot, 0deg));
+    }
+    100% {
+      opacity: 0.8;
+      transform: translateY(0) rotate(var(--rot, 0deg));
+    }
+  }
 
+  .LeavesWrapper{
+    height: 1px;
+    position: relative;
+
+  }
+  
   .Leaf {
     position: absolute;
     width: 100px;
@@ -221,35 +97,80 @@
     background-position: center;
     pointer-events: none;
     z-index: 10;
-    opacity: 0.8;
+    opacity: 0;
+    transform: rotate(var(--rot, 0deg));
   }
   
+  .fade-down {
+    animation-name: fadeDown;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+  
+  /* Keep animation-delay in each leaf class */
   .LeafLeft1 {
-    top: 230%;
-    left: 30px;
+    top: -13000%;
+    left: -200px;
     background-image: url('../../../../content/images/leaves/leafGreen.png');
-    transform: rotate(-20deg);
-  }
-  
-  .LeafRight1 {
-    top: 250%;
-    left: 100px;
-    background-image: url('../../../../content/images/leaves/leafRed.png');
-    transform: rotate(10deg);
+    --rot: 20deg;
+    animation-delay: 0.1s;
   }
   
   .LeafLeft2 {
-    top: 270%;
-    left: 35px;
-    background-image: url('../../../../content/images/leaves/leafOrange.png');
-    transform: rotate(15deg);
-  }
-
-  .LeafRight2 {
-    top: 290%;
-    left: 90px;
+    top: 500%;
+    left: -130px;
     background-image: url('../../../../content/images/leaves/leafRed.png');
-    transform: rotate(-25deg);
+    --rot: 20deg;
+    animation-delay: 0.2s;
+  }
+  
+  .LeafLeft3 {
+    top: 15000%;
+    left: -195px;
+    background-image: url('../../../../content/images/leaves/leafOrange.png');
+    --rot: 15deg;
+    animation-delay: 0.3s;
+  }
+  
+  .LeafLeft4 {
+    top: 28000%;
+    left: -140px;
+    background-image: url('../../../../content/images/leaves/leafRed.png');
+    --rot: -25deg;
+    animation-delay: 0.4s;
+  }
+  
+  .LeafRight1 {
+    top: -6000%;
+    right: -200px;
+    background-image: url('../../../../content/images/leaves/leafOrange.png');
+    --rot: -20deg;
+    animation-delay: 0.1s;
+  }
+  
+  .LeafRight2 {
+    top: 8000%;
+    right: -130px;
+    background-image: url('../../../../content/images/leaves/leafYellow.png');
+    --rot: 10deg;
+    animation-delay: 0.2s;
+  }
+  
+  .LeafRight3 {
+    top: 19000%;
+    right: -195px;
+    background-image: url('../../../../content/images/leaves/leafGreen.png');
+    --rot: -25deg;
+    animation-delay: 0.3s;
+  }
+  
+  .LeafRight4 {
+    top: 30000%;
+    right: -140px;
+    background-image: url('../../../../content/images/leaves/leafOrange.png');
+    --rot: -70deg;
+    animation-delay: 0.4s;
   }
   
   
@@ -284,11 +205,297 @@
         width: 100%;
         max-width: none;
     }
+
+    .Interest:nth-child(19) {
+        background: linear-gradient(270deg, #ac8a74, #c6a67e);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #866046;
+      } 
+      
+      .Interest:nth-child(18) {
+        background: linear-gradient(270deg, #b2865f, #9c6f51);
+        background: linear-gradient(270deg, #ffe5b4, #f8cfa0);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #b6986f;
+      }
+      
+      .Interest:nth-child(17) {
+        background: linear-gradient(270deg, #f2c58e, #f8cc98);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #bd8748;
+      }
+      
+      .Interest:nth-child(16) {
+        background: linear-gradient(270deg, #d1a182, #e4bc8b);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #b87646;
+      }     
+      
+      .Interest:nth-child(15) {
+        background: linear-gradient(270deg, #f8cfa0, #edbb88);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #c79463;
+      }
+
+      .Interest:nth-child(14) {
+        background: linear-gradient(270deg, #d9a775, #f9c58a);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #a1784a;
+      }
+      
+      .Interest:nth-child(13) {
+        background: linear-gradient(270deg, #edbb88, #e5aa7a);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #b37853;
+      }
+      
+      .Interest:nth-child(12) {
+        background: linear-gradient(270deg, #fcd8a6, #eab27c);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #c48f5b;
+      }
+      
+      .Interest:nth-child(11) {
+        background: linear-gradient(270deg, #eab27c, #d89b6a);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #a96b3f;
+      }
+      
+      .Interest:nth-child(10) {
+        background: linear-gradient(270deg, #d89b6a, #c28b6d);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #875132;
+      }
+      
+      .Interest:nth-child(9) {
+        background: linear-gradient(270deg, #f3c8a1, #e1aa81);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #ad7349;
+      }
+      
+      .Interest:nth-child(8) {
+        background: linear-gradient(270deg, #e1aa81, #c9956f);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #905c36;
+      }
+
+      .Interest:nth-child(7) {
+        background: linear-gradient(270deg, #c9956f, #b07a5e);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #75492a;
+      }
+
+      .Interest:nth-child(6) {
+        background: linear-gradient(270deg, #f7cda2, #e6ac84);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #af7343;
+      }
+      
+      
+      .Interest:nth-child(5) {
+        background: linear-gradient(270deg, #e6ac84, #cd9270);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #8d502d;
+      }
+      
+      .Interest:nth-child(4) {
+        background: linear-gradient(270deg, #cd9270, #a36b55);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #703a23;
+      }
+      
+      
+      .Interest:nth-child(3) {
+        background: linear-gradient(270deg, #e7b88d, #cba078);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #a16b3e;
+      }
+      
+      .Interest:nth-child(2) {
+        background: linear-gradient(270deg, #cba078, #a96e58);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #703a25;
+      }
+      
+      .Interest:nth-child(1) {
+        background: linear-gradient(270deg, #a96e58, #8f5947);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #562e1e;
+      }
+
   }
   
   @media (min-width: 1100px) {
     .Interests {
       grid-template-columns: repeat(4, 13.5rem);
     }
+
+    .Interest:nth-child(20) {
+        background: linear-gradient(270deg, #fcecd2, #ffe5b4);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #e2c79a;
+      }
+      
+      .Interest:nth-child(19) {
+        background: linear-gradient(270deg, #ffe5b4, #f8cfa0);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #dab07f;
+      }
+      
+      .Interest:nth-child(18) {
+        background: linear-gradient(270deg, #f8cfa0, #edbb88);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #c79463;
+      }
+      
+      .Interest:nth-child(17) {
+        background: linear-gradient(270deg, #edbb88, #e5aa7a);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #b37853;
+      }
+      
+      .Interest:nth-child(16) {
+        background: linear-gradient(270deg, #ffe5c0, #fcd8a6);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #d7af7d;
+      }
+      
+      .Interest:nth-child(15) {
+        background: linear-gradient(270deg, #fcd8a6, #eab27c);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #c48f5b;
+      }
+      
+      .Interest:nth-child(14) {
+        background: linear-gradient(270deg, #eab27c, #d89b6a);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #a96b3f;
+      }
+      
+      .Interest:nth-child(13) {
+        background: linear-gradient(270deg, #d89b6a, #c28b6d);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #875132;
+      }
+      
+      .Interest:nth-child(12) {
+        background: linear-gradient(270deg, #f7e3c1, #f3c8a1);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #cda177;
+      }
+      
+      .Interest:nth-child(11) {
+        background: linear-gradient(270deg, #f3c8a1, #e1aa81);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #ad7349;
+      }
+      
+      .Interest:nth-child(10) {
+        background: linear-gradient(270deg, #e1aa81, #c9956f);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #905c36;
+      }
+      
+      .Interest:nth-child(9) {
+        background: linear-gradient(270deg, #c9956f, #b07a5e);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #75492a;
+      }
+      
+      .Interest:nth-child(8) {
+        background: linear-gradient(270deg, #fce0b5, #f7cda2);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #d8aa74;
+      }
+      
+      .Interest:nth-child(7) {
+        background: linear-gradient(270deg, #f7cda2, #e6ac84);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #af7343;
+      }
+      
+      .Interest:nth-child(6) {
+        background: linear-gradient(270deg, #e6ac84, #cd9270);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #8d502d;
+      }
+      
+      .Interest:nth-child(5) {
+        background: linear-gradient(270deg, #cd9270, #a36b55);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #703a23;
+      }
+      
+      .Interest:nth-child(4) {
+        background: linear-gradient(270deg, #f5d4ae, #e7b88d);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease-in-out infinite;
+        border: 3.5px solid #c88e57;
+      }
+      
+      .Interest:nth-child(3) {
+        background: linear-gradient(270deg, #e7b88d, #cba078);
+        background-size: 400% 400%;
+        animation: gradientShift 4s ease-in-out infinite;
+        border: 3.5px solid #a16b3e;
+      }
+      
+      .Interest:nth-child(2) {
+        background: linear-gradient(270deg, #cba078, #a96e58);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease-in-out infinite;
+        border: 3.5px solid #703a25;
+      }
+      
+      .Interest:nth-child(1) {
+        background: linear-gradient(270deg, #a96e58, #8f5947);
+        background-size: 400% 400%;
+        animation: gradientShift 6s ease-in-out infinite;
+        border: 3.5px solid #562e1e;
+      }
   }
-  
+
+  @media (max-width: 1400px) {
+    .Leaf {
+        display: none;   /* or visibility: hidden; */
+        visibility: hidden;
+      }
+  }
+
+ 
+

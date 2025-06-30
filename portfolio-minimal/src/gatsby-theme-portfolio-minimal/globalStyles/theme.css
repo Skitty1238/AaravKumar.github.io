@@ -17,6 +17,8 @@ body[data-theme='lightTheme'] {
     --code-block-keyword: #2bdcff;
     --code-block-comment: #8292a2;
     --code-block-tkimp: #fd971f;
+    overflow-x: hidden;
+
 }
 
 body[data-theme='darkTheme'] {
