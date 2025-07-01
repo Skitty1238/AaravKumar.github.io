@@ -58,7 +58,7 @@ export function AboutSection(props: PageSection): React.ReactElement {
                         >
                             <div className="CroissantImage" />
                         </div>
-
+                        
                     </div>
                 )}
               </div>

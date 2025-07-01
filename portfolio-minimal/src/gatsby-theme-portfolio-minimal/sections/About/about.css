@@ -62,8 +62,7 @@
   
     transform: rotate(270deg);
     animation: float 3s ease-in-out 2.2s infinite;
-  }
-  
+  }  
   
   .About {
     position: relative;
@@ -88,6 +87,8 @@
     box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);
     filter: grayscale(20%) contrast(1) brightness(90%);
 }
+
+
 
 @media (min-width: 768px) {
     .About {
@@ -141,3 +142,52 @@
     }
 }
 
+@media (max-width: 620px) {
+  .CroissantWrapper {
+    width: 75vw;
+    height: 75vw;
+    position: absolute;
+    right: -12%;
+    top: 50%;
+  }
+}
+
+@media (max-width: 530px) {
+  .CroissantWrapper {
+    top: 55%;
+    right: -25%;
+  }
+}
+
+@media (max-width: 465px) {
+  .CroissantWrapper {
+    top: 62%;
+    right: -28%;
+  }
+}
+
+@media (max-width: 420px) {
+  .CroissantWrapper {
+    top: 65%;
+    right: -30%;
+  }
+}
+
+@media (max-width: 400px) {
+  .CroissantWrapper {
+    top: 70%;
+    right: -35%;
+  }
+}
+
+@media (max-width: 370px) {
+  .CroissantWrapper {
+    top: 74%;
+  }
+}
+
+@media (max-width: 335px) {
+  .CroissantWrapper {
+    top: 78%;
+  }
+}

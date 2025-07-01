@@ -46,7 +46,7 @@
       "description": "As lead designer for H@B, Brown's annual hackathon, I define and pitch a unique creative theme each year, and help bring it to life through a cohesive webpage and social media design. From designing 2D and 3D assets in Illustrator and Blender to building animated web prototypes in Figma, our team works to ensure that every element aligns with the hackathon's artistic vision.",
       "tags": ["Figma", "Illustrator", "Blender", "Animation", "Visual Storytelling"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
+        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
         "alt": "Extendable Layout"
       },
       "links": [
@@ -60,7 +60,7 @@
       "visible": true,
       "category": "🖼️ NEURAL STYLE TRANSFER",
       "title": "Neural Canvas",
-      "description": "Neural Canvas is a text-to-art image stylization system. When a user inputs an image and text prompt describing a desired theme, the system selects and blends artistic styles, using an ML model to apply the blended style to their image. Alongside building our image classification and neural transfer pipeline, we wrote a paper comparing different style application methods and model optimization techniques.",
+      "description": "This project is a text-to-art image stylization system. When a user inputs an image and text prompt describing a desired theme, the system selects and blends artistic styles, using an ML model to apply the blended style to their image. Alongside building our image classification and neural transfer pipeline, we wrote a paper comparing different style application methods and model optimization techniques.",
       "tags": ["Computer Vision", "Machine Learning", "OpenAI CLIP"],
       "image": {
         "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
@@ -94,7 +94,7 @@
       "visible": true,
       "category": "🚧 WEB DEVELOPMENT",
       "title": "Brown Student Radio",
-      "description": "As part of FullStack @ Brown, our team built a new website for Brown Student Radio. I communicated with the client to define their needs and iterate on design priorities, and helped implement key pages including About, Schedule, People, Blog, and Contact. I integrated Cosmic as a content management system to enable non-technical team members to update content, and set up authentication and protected access using Firebase.",
+      "description": "As part of FullStack @ Brown, our team built a new website for Brown Student Radio. I communicated with the client to define their needs and design priorities, and helped implement key pages including About, Schedule, People, Blog, and Contact. I integrated Cosmic as a content management system to allow team members to update content without having to code, and set up authentication + protected access using Firebase.",
       "tags": ["React", "Typescript", "Next.js", "CMS Integration", "Firebase Auth"],
       "image": {
         "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
