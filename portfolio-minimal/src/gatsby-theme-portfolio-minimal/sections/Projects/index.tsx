@@ -21,7 +21,7 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
                         return project.visible ? <Project key={key} index={key} data={project} /> : null;
                     })}
                 </Slider>
-                {data.button !== undefined && data.button.visible !== false && (
+                {/* {data.button !== undefined && data.button.visible !== false && (
                     <Animation className="MoreProjects" type="fadeIn">
                         <Button
                             type={ButtonType.LINK}
@@ -30,7 +30,7 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
                             label={data.button.label}
                         />
                     </Animation>
-                )}
+                )} */}
 
                 <div className="RedPaintWrapper">
                     <div className="RedPaintImage" />
