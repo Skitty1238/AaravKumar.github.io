@@ -13,9 +13,16 @@
     position: relative;
 }
 
+.Project--left .ImageWrapper,
+.Project:nth-of-type(odd) .ImageWrapper {
+  width: 100%;
+  max-width: 50%;     /* Or whatever the first image uses */
+  flex: 1;
+}
+
 .RedPaintWrapper {
     position: absolute;
-    top: 8%;
+    top: 9%;
     right: 4%;
     width: 250px;
     height: 250px;
@@ -35,7 +42,7 @@
 
 .YellowPaintWrapper {
     position: absolute;
-    top: 23%;
+    top: 24%;
     left: 2%;
     width: 250px;
     height: 250px;
@@ -55,7 +62,7 @@
 
 .GreenPaintWrapper {
     position: absolute;
-    top: 59.5%;
+    top: 60.5%;
     right: 2%;
     width: 250px;
     height: 250px;
@@ -75,7 +82,7 @@
 
 .BluePaintWrapper {
     position: absolute;
-    top: 73.2%;
+    top: 75.2%;
     left: 3%;
     width: 220px;
     height: 220px;
@@ -101,6 +108,17 @@
     .MoreProjects {
         margin-top: 0;
     }
+    .Projects > :last-child {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1040px) {
+    .Projects .gatsby-image-wrapper {
+    max-width: 22.2rem;
+    width: 100%;
+    flex: 1;
+    }
 }
 
 @media (max-width: 992px) {
@@ -118,14 +136,14 @@
     }
 
     .RedPaintWrapper {
-        top: 9.5%;
+        top: 10.5%;
         right: 7%;
     }
 
     .YellowPaintWrapper {
         width: 220px;
         height: 220px;
-        top: 22%;
+        top: 23%;
         left: 13%;
     }
     
@@ -134,7 +152,7 @@
     }
 
     .GreenPaintWrapper {
-        top: 57.5%;
+        top: 59.5%;
         right: 8%;
     }
     
@@ -143,7 +161,7 @@
     }
 
     .BluePaintWrapper {
-        top: 71%;
+        top: 73.2%;
         left: 24%;
     }
     
