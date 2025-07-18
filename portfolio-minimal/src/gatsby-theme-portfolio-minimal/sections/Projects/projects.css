@@ -118,12 +118,24 @@
     max-width: 22.2rem;
     width: 100%;
     flex: 1;
+    object-fit: cover !important;
+    object-position: top left !important;
+    }
+
+    .Projects .gatsby-image-wrapper img {
+        object-fit: cover !important;
+        object-position: top left !important;
     }
 }
 
 @media (max-width: 992px) {
     .RedPaintWrapper, .YellowPaintWrapper, .GreenPaintWrapper, .BluePaintWrapper {
         visibility: hidden;
+    }
+
+    .Projects .gatsby-image-wrapper img {
+        object-fit: cover !important;
+        object-position: top left !important;
     }
 }
 

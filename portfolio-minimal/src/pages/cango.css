@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
 
-section {
+.cango-wrapper section {
     max-width: 800px;
     margin: 4rem auto;
     padding: 0 1rem;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 0.8s ease forwards;
+    animation: cangoFadeInUp 0.8s ease forwards;
     animation-delay: var(--delay, 0s);
 }
 
-section:nth-of-type(2) { --delay: 0.1s; }
-section:nth-of-type(3) { --delay: 0.2s; }
-section:nth-of-type(4) { --delay: 0.3s; }
-section:nth-of-type(5) { --delay: 0.4s; }
-section:nth-of-type(6) { --delay: 0.5s; }
-section:nth-of-type(7) { --delay: 0.6s; }
-section:nth-of-type(8) { --delay: 0.7s; }
-section:nth-of-type(9) { --delay: 0.8s; }
-section:nth-of-type(10) { --delay: 0.9s; }
-section:nth-of-type(11) { --delay: 1s; }
-section:nth-of-type(12) { --delay: 1.1s; }
+.cango-wrapper section:nth-of-type(2) { --delay: 0.1s; }
+.cango-wrapper section:nth-of-type(3) { --delay: 0.2s; }
+.cango-wrapper section:nth-of-type(4) { --delay: 0.3s; }
+.cango-wrapper section:nth-of-type(5) { --delay: 0.4s; }
+.cango-wrapper section:nth-of-type(6) { --delay: 0.5s; }
+.cango-wrapper section:nth-of-type(7) { --delay: 0.6s; }
+.cango-wrapper section:nth-of-type(8) { --delay: 0.7s; }
+.cango-wrapper section:nth-of-type(9) { --delay: 0.8s; }
+.cango-wrapper section:nth-of-type(10) { --delay: 0.9s; }
+.cango-wrapper section:nth-of-type(11) { --delay: 1s; }
+.cango-wrapper section:nth-of-type(12) { --delay: 1.1s; }
 
-.github-button {
+.cango-wrapper .github-button {
     padding-top: 2rem;
     margin-bottom: 4rem;
     display: flex column;
@@ -31,50 +31,50 @@ section:nth-of-type(12) { --delay: 1.1s; }
     
 }
 
-.built-by {
+.cango-wrapper .built-by {
     margin-top: 2rem;}
 
-h1 {
+.cango-wrapper h1 {
     text-align: center;
     font-size: 6rem;
     margin-top: 4rem;
     margin-bottom: 1rem;
     line-height: 1.2;
-    animation: fadeInCenter 1s ease forwards;
+    animation: cangoFadeInCenter 1s ease forwards;
     font-family: 'Outfit', sans-serif;
     color: rgb(221, 17, 85)
 }
 
-h3 {
+.cango-wrapper h3 {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 4rem;
     line-height: 1.2;
-    animation: fadeInCenter 1s ease forwards;
+    animation: cangoFadeInCenter 1s ease forwards;
 }
 
-h2 {
+.cango-wrapper h2 {
     font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-p, ul {
+.cango-wrapper p, ul {
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-ul {
+.cango-wrapper ul {
     padding-left: 1.5rem;
     list-style-type: disc;
 }
 
-strong {
+.cango-wrapper strong {
     font-weight: 600;
 }
 
-.cango-image {
+.cango-wrapper .cango-image {
     margin-top: 2rem;
     width: 50rem;
     height: auto;
@@ -82,13 +82,13 @@ strong {
     box-shadow: 4px 4px 20px rgba(72, 3, 3, 0.126);;
 }
 
-.image-stack {
+.cango-wrapper .image-stack {
     position: relative;
     display: inline-block;
     margin: 2rem 0;
 }
 
-.overlay-image {
+.cango-wrapper .overlay-image {
     position: absolute;
     bottom: -2rem;
     right: -2rem;
@@ -100,7 +100,7 @@ strong {
     background: white;
 }
 
-.side-by-side {
+.cango-wrapper .side-by-side {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -109,11 +109,11 @@ strong {
     flex-wrap: wrap;
 }
   
-.side-by-side .text-content {
+.cango-wrapper .side-by-side .text-content {
     flex: 1 1 300px;
 }
   
-.side-by-side .side-image {
+.cango-wrapper .side-by-side .side-image {
     flex: 0 0 auto;
     width: 320px;
     height: auto;
@@ -124,14 +124,14 @@ strong {
 }
   
 /* Animations */
-@keyframes fadeInUp {
+@keyframes cangoFadeInUp {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@keyframes fadeInCenter {
+@keyframes cangoFadeInCenter {
     from {
         opacity: 0;
         transform: scale(0.95);
@@ -142,15 +142,15 @@ strong {
     }
 }
 
-.cango-image,
-.overlay-image,
-.side-image {
+.cango-wrapper .cango-image,
+.cango-wrapper .overlay-image,
+.cango-wrapper .side-image {
     transition: transform 0.3s ease;
     will-change: transform;
 }
 
-.cango-image:hover,
-.overlay-image:hover,
-.side-image:hover {
+.cango-wrapper .cango-image:hover,
+.cango-wrapper .overlay-image:hover,
+.cango-wrapper .side-image:hover {
     transform: scale(1.01);
 }

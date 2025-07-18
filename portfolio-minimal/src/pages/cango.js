@@ -9,11 +9,12 @@ export default function CanGo() {
         <>
             <Seo title="CanGo" />
             <Page useSplashScreenAnimation>
+            <div className="cango-wrapper">
 
                 <section>
                     <h1>CanGo</h1>
                     <h3>Discover Events. Meet People. Build Community.</h3>
-                    <p>My peers and I found ourselves constantly missing out on events—either because we never saw the emails or because they got buried in endless newsletters. We wanted to build something that made it easier for students like us to actually enjoy what campus has to offer, without relying on manually checking dozens of different calendars.</p>
+                    <p>My peers and I found ourselves constantly missing out on events—either because we never saw the emails or because they got buried in endless newsletters. We wanted to build something that made it easier for students like us to actually enjoy what our campus has to offer, without relying on manually checking dozens of calendars.</p>
                     <p>So, four of us got together to build <strong>CanGo</strong>, a platform to make campus events more social, discoverable, and personalized for Brown and RISD students. Instead of getting overwhelmed by Events@Brown or missing word-of-mouth gatherings, students can now find what they care about—and who they'll enjoy it with.</p>
                 </section>
 
@@ -147,6 +148,7 @@ export default function CanGo() {
                 </Animation>
 
 
+            </div>
             </Page>
         </>
     );

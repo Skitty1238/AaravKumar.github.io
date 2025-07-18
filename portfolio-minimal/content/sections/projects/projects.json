@@ -7,18 +7,22 @@
       "description": "A web app for Brown + RISD students to search for and publicize student events, from karaoke nights to matcha making sessions. Includes a smart recommendation algorithm to recommend events based on personal interests, past event ratings, number of friends attending, and more. Click here to learn more!",
       "tags": ["React", "HTML/CSS", "Java", "Typescript", "Clerk Auth", "Playwright Testing", "JUnit Testing"],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "src": "../../images/projects/cango.png",
+        "alt": "CanGo Events App",
+        "linkTo": "/cango"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/Skitty1238/CanGo"
+        },
+        {
+          "type": "figma",
+          "url": "https://www.figma.com/design/mzuq9gmke7iAjvfS4J8QGy/CanGo?node-id=0-1&p=f"
         },
         {
           "type": "external",
-          "url": "https://www.gatsbyjs.org/docs/mdx/writing-pages/"
+          "url": "/cango"
         }
       ]
     },
