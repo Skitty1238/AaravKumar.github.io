@@ -113,19 +113,25 @@
     }
 }
 
+.Projects > :not(:first-child) .gatsby-image-wrapper {
+    box-shadow: 0 0 1.5rem rgba(20, 4, 0, 0.392);
+}
+
+.Projects > :not(:first-child) .gatsby-image-wrapper:hover {
+    box-shadow: 0 0 1.8rem rgba(20, 4, 0, 0.554);
+}
+
 @media (min-width: 992px) and (max-width: 1040px) {
     .Projects .gatsby-image-wrapper {
     max-width: 22.2rem;
     width: 100%;
     flex: 1;
-    object-fit: cover !important;
-    object-position: top left !important;
     }
 
-    .Projects .gatsby-image-wrapper img {
+    /* .Projects > :nth-child(2) .gatsby-image-wrapper img {
         object-fit: cover !important;
         object-position: top left !important;
-    }
+    } */
 }
 
 @media (max-width: 992px) {
@@ -133,7 +139,7 @@
         visibility: hidden;
     }
 
-    .Projects .gatsby-image-wrapper img {
+    .Projects > :nth-child(2) .gatsby-image-wrapper img {
         object-fit: cover !important;
         object-position: top left !important;
     }

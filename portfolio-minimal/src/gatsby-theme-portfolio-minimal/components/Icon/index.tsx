@@ -7,7 +7,13 @@ import {
     FaTwitter,
     FaEnvelope,
     FaYoutube,
+    FaInstagram,
+    FaFileAlt,
+    FaGoogleDrive,
+    FaFilePowerpoint,
+    FaChalkboardTeacher,
 } from 'react-icons/fa';
+import { PiPresentationChartDuotone } from 'react-icons/pi';
 import { FiExternalLink } from 'react-icons/fi';
 
 interface IconProps {
@@ -27,6 +33,10 @@ export function Icon(props: IconProps): React.ReactElement | null {
       twitter: FaTwitter,
       mail: FaEnvelope,
       youtube: FaYoutube,
+      instagram: FaInstagram,
+      webpage: FaFileAlt,
+      drive: FaGoogleDrive,
+      slides: PiPresentationChartDuotone,
     };
   
     const IconComponent = iconMap[props.name.toLowerCase()];

@@ -7,7 +7,7 @@
       "description": "A web app for Brown + RISD students to search for and publicize student events, from karaoke nights to matcha making sessions. Includes a smart recommendation algorithm to recommend events based on personal interests, past event ratings, number of friends attending, and more. Click here to learn more!",
       "tags": ["React", "HTML/CSS", "Java", "Typescript", "Clerk Auth", "Playwright Testing", "JUnit Testing"],
       "image": {
-        "src": "../../images/projects/cango.png",
+        "src": "../../images/projects/homepage.png",
         "alt": "CanGo Events App",
         "linkTo": "/cango"
       },
@@ -33,13 +33,13 @@
       "description": "As a lead developer at Dash, a large-scale hypertext media app, I build tools that help users create, reflect, and stay organized. So far, my work has spanned AI-powered text augmentation to support better writing, building custom journaling tools with generative prompts, and dynamic task nodes that streamline personal workflows.",
       "tags": ["MERN Stack", "AI Integration"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
-        "alt": "Extendable Layout"
+        "src": "../../images/projects/dash.png",
+        "alt": "Dash Web App"
       },
       "links": [
         {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "type": "webpage",
+          "url": "https://brown-dash.github.io/Dash-Documentation/about/"
         }
       ]
     },
@@ -50,13 +50,21 @@
       "description": "As lead designer for H@B, Brown's annual hackathon, I define and pitch a unique creative theme each year, and help bring it to life through a cohesive webpage and social media design. From designing 2D and 3D assets in Illustrator and Blender to building animated web prototypes in Figma, our team works to ensure that every element aligns with the hackathon's artistic vision.",
       "tags": ["Figma", "Illustrator", "Blender", "Animation", "Visual Storytelling"],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup"
+        "src": "../../images/projects/hab.jpeg",
+        "alt": "Hack@Brown 2025 Website"
       },
       "links": [
         {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "type": "external",
+          "url": "https://hackatbrown.org/"
+        },
+        {
+          "type": "figma",
+          "url": "https://www.figma.com/design/ogqji3s78QfxixyHvR9QcH/H-B-2025?node-id=170-51&p=f"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/hackatbrown/"
         }
       ]
     },
@@ -67,13 +75,25 @@
       "description": "This project is a text-to-art image stylization system. When a user inputs an image and text prompt describing a desired theme, the system selects and blends artistic styles, using an ML model to apply the blended style to their image. Alongside building our image classification and neural transfer pipeline, we wrote a paper comparing different style application methods and model optimization techniques.",
       "tags": ["Computer Vision", "Machine Learning", "OpenAI CLIP"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
+        "src": "../../images/projects/neuralcanvas.png",
         "alt": "Extendable Layout"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/angelreyes04/Neural-Canvas"
+        },
+        {
+          "type": "webpage",
+          "url": "/neural-canvas.pdf"
+        },
+        {
+          "type": "slides",
+          "url": "/neural-canvas-slides.pdf"
+        },
+        {
+          "type": "drive",
+          "url": "https://colab.research.google.com/drive/1uTbR-jpk803BG8qDtaDM_75Gg5bguYw3#scrollTo=l-IHIR5HoYWw"
         }
       ]
     },
