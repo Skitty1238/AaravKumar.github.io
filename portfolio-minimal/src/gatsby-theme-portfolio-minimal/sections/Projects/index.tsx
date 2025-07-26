@@ -16,38 +16,40 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
         <Animation type="fadeIn">
             <div className='SectionWrapper'>
             <Section anchor={props.sectionId} heading={props.heading}>
-                <Slider additionalClasses={["Projects"]}>
-                    {data.projects.map((project, key) => {
-                        return project.visible ? <Project key={key} index={key} data={project} /> : null;
-                    })}
-                </Slider>
-                {/* {data.button !== undefined && data.button.visible !== false && (
-                    <Animation className="MoreProjects" type="fadeIn">
-                        <Button
-                            type={ButtonType.LINK}
-                            externalLink={true}
-                            url={data.button.url}
-                            label={data.button.label}
-                        />
-                    </Animation>
-                )} */}
+                <div className="ProjectsContainer">
+                    <Slider additionalClasses={["Projects"]}>
+                        {data.projects.map((project, key) => {
+                            return project.visible ? <Project key={key} index={key} data={project} /> : null;
+                        })}
+                    </Slider>
+                    {/* {data.button !== undefined && data.button.visible !== false && (
+                        <Animation className="MoreProjects" type="fadeIn">
+                            <Button
+                                type={ButtonType.LINK}
+                                externalLink={true}
+                                url={data.button.url}
+                                label={data.button.label}
+                            />
+                        </Animation>
+                    )} */}
 
-                <div className="RedPaintWrapper">
-                    <div className="RedPaintImage" />
+                    <div className="RedPaintWrapper">
+                        <div className="RedPaintImage" />
+                    </div>
+
+                    <div className="YellowPaintWrapper">
+                        <div className="YellowPaintImage" />
+                    </div>
+
+                    <div className="GreenPaintWrapper">
+                        <div className="GreenPaintImage" />
+                    </div>
+
+                    <div className="BluePaintWrapper">
+                        <div className="BluePaintImage" />
+                    </div>
+
                 </div>
-
-                <div className="YellowPaintWrapper">
-                    <div className="YellowPaintImage" />
-                </div>
-
-                <div className="GreenPaintWrapper">
-                    <div className="GreenPaintImage" />
-                </div>
-
-                <div className="BluePaintWrapper">
-                    <div className="BluePaintImage" />
-                </div>
-
             </Section>
             </div>
         </Animation>

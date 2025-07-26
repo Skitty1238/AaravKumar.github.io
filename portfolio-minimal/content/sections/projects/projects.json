@@ -31,10 +31,11 @@
       "category": "✏️ HYPERTEXT MEDIA",
       "title": "Dash Web App",
       "description": "As a lead developer at Dash, a large-scale hypertext media app, I build tools that help users create, reflect, and stay organized. So far, my work has spanned AI-powered text augmentation to support better writing, building custom journaling tools with generative prompts, and dynamic task nodes that streamline personal workflows.",
-      "tags": ["MERN Stack", "AI Integration"],
+      "tags": ["MERN Stack", "AI Integration", "Typescript", "HTML/CSS", "ProseMirror"],
       "image": {
         "src": "../../images/projects/dash.png",
-        "alt": "Dash Web App"
+        "alt": "Dash Web App",
+        "linkTo": "https://brown-dash.github.io/Dash-Documentation/about/"
       },
       "links": [
         {
@@ -51,7 +52,8 @@
       "tags": ["Figma", "Illustrator", "Blender", "Animation", "Visual Storytelling"],
       "image": {
         "src": "../../images/projects/hab.jpeg",
-        "alt": "Hack@Brown 2025 Website"
+        "alt": "Hack@Brown 2025 Website",
+        "linkTo": "https://hackatbrown.org/"
       },
       "links": [
         {
@@ -73,10 +75,11 @@
       "category": "🖼️ NEURAL STYLE TRANSFER",
       "title": "Neural Canvas",
       "description": "This project is a text-to-art image stylization system. When a user inputs an image and text prompt describing a desired theme, the system selects and blends artistic styles, using an ML model to apply the blended style to their image. Alongside building our image classification and neural transfer pipeline, we wrote a paper comparing different style application methods and model optimization techniques.",
-      "tags": ["Computer Vision", "Machine Learning", "OpenAI CLIP"],
+      "tags": ["Computer Vision", "Machine Learning", "OpenAI CLIP", "Jupyter Notebook", "Python"],
       "image": {
         "src": "../../images/projects/neuralcanvas.png",
-        "alt": "Extendable Layout"
+        "alt": "Neural Canvas Project",
+        "linkTo": "/neural-canvas.pdf"
       },
       "links": [
         {
@@ -104,13 +107,18 @@
       "description": "I built an AR app that visualizes earthquake data, combining map-based overlays with custom haptic (tactile) feedback to represent magnitude, depth, and geographic impact. I conducted a user study comparing multiple visualization variants— 2D vs. AR, haptic vs. non-haptic, focused vs. comprehensive— to analyze what UX components maximized engagement, recall, and comprehension in AR.",
       "tags": ["Unity XR", "Meta Haptics Studio", "C#", "Data Visualization"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
-        "alt": "Extendable Layout"
+        "src": "../../images/projects/vr2.jpg",
+        "alt": "VR Earthquake Visualization",
+        "linkTo": "/vrearthquake"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/Skitty1238/AREarthquake"
+        },
+        {
+          "type": "external",
+          "url": "/vrearthquake"
         }
       ]
     },
@@ -121,13 +129,22 @@
       "description": "As part of FullStack @ Brown, our team built a new website for Brown Student Radio. I communicated with the client to define their needs and design priorities, and helped implement key pages including About, Schedule, People, Blog, and Contact. I integrated Cosmic as a content management system to allow team members to update content without having to code, and set up authentication + protected access using Firebase.",
       "tags": ["React", "Typescript", "Next.js", "CMS Integration", "Firebase Auth"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
-        "alt": "Extendable Layout"
+        "src": "../../images/projects/BSR.png",
+        "alt": "Brown Student Radio Website",
+        "linkTo": "https://github.com/fullstackatbrown/project-brown-student-radio"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/fullstackatbrown/project-brown-student-radio"
+        },
+        {
+          "type": "external",
+          "url": "https://brownstudentradio.vercel.app/"
+        },
+        {
+          "type": "figma",
+          "url": "https://www.figma.com/design/NnOFzXwidiueJ2kqdsF2t7/BSR?node-id=0-1&p=f"
         }
       ]
     },
@@ -138,13 +155,13 @@
       "description": "At FullStack @ Brown, my team designed and developed a website for Pottery at Brown. I helped build dynamic pages for class listings, instructor bios, studio access, and contact info, and integrated Cosmic CMS to give the team control over their content. I also implemented authentication to manage admin-only editing privileges.",
       "tags": ["React", "Next.js", "Typescript", "CMS Integration"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
-        "alt": "Extendable Layout"
+        "src": "../../images/projects/PAB.png",
+        "alt": "Pottery at Brwon Website"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/fullstackatbrown/project-pottery-at-brown"
         }
       ]
     },        
@@ -155,13 +172,17 @@
       "description": "I built an AR app that visualizes household water availability across countries, using volumetric simulations to represent life-size water quantities. In a user study, I compared the AR version to existing charts and tables of the same data to study trade-offs between immersion and analytical clarity in spatialized data displays.",
       "tags": ["Unity XR", "Spatial Computing", "C#", "Data Visualization"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
-        "alt": "Extendable Layout"
+        "src": "../../images/projects/water.jpg",
+        "alt": "AR Water Visualization App"
       },
       "links": [
         {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "type": "external",
+          "url": "/poster.pdf"
+        },
+        {
+          "type": "youtube",
+          "url": "/water.mov"
         }
       ]
     }
