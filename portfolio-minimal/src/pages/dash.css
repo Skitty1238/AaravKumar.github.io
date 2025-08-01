@@ -1,0 +1,127 @@
+.dash-wrapper section {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: dashFadeInUp 0.8s ease forwards;
+    animation-delay: var(--delay, 0s);
+}
+
+.dash-wrapper section:nth-of-type(2) { --delay: 0.1s; }
+.dash-wrapper section:nth-of-type(3) { --delay: 0.2s; }
+.dash-wrapper section:nth-of-type(4) { --delay: 0.3s; }
+.dash-wrapper section:nth-of-type(5) { --delay: 0.4s; }
+
+.dash-wrapper h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    animation: dashFadeInCenter 1s ease forwards;
+}
+
+.dash-wrapper h3 {
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    animation: dashFadeInCenter 1s ease forwards;
+}
+
+#tagline {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    line-height: 1.2;
+    animation: dashFadeInCenter 1s ease forwards;
+}
+
+.dash-wrapper h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.dash-wrapper p,
+.dash-wrapper ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.dash-wrapper ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.dash-wrapper strong {
+    font-weight: 600;
+}
+
+/* Alternating feature layout */
+.dash-wrapper .feature-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.dash-wrapper .feature-left {
+    flex-direction: row;
+}
+
+.dash-wrapper .feature-right {
+    flex-direction: row-reverse;
+}
+
+.dash-wrapper .feature-gif {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+@media (max-width: 768px) {
+    .dash-wrapper .feature-block {
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+
+    .dash-wrapper .feature-gif {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes dashFadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dashFadeInCenter {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
