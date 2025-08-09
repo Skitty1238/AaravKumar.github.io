@@ -35,9 +35,13 @@
       "image": {
         "src": "../../images/projects/dash.png",
         "alt": "Dash Web App",
-        "linkTo": "https://brown-dash.github.io/Dash-Documentation/about/"
+        "linkTo": "/dash"
       },
       "links": [
+        {
+          "type": "external",
+          "url": "/dash"
+        },
         {
           "type": "webpage",
           "url": "https://brown-dash.github.io/Dash-Documentation/about/"

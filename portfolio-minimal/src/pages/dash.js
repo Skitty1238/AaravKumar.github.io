@@ -21,46 +21,27 @@ export default function Dash() {
                     <p>
                         Below are three projects I've worked on so far:
                     </p>
-                    <ul>
-                        <li><strong>Journaling Nodes:</strong> active journaling with custom prompts and inline guidance</li>
-                        <li><strong>Task Management:</strong> flexible, multi-context tasks that integrate with other media</li>
-                        <li><strong>Writing Assistant:</strong> in-place, agentic suggestions and context-aware assistance</li>
-                    </ul>
                 </section>
 
-                {/* Project 1 — Journaling */}
+                {/* Project 1 */}
                 <section id="journaling" className="dash-section">
-                    <h2>Project 1 — Journaling & Reflection</h2>
-
-                    <img
-                        src="/images/Dash/journal-board.png"
-                        alt="Journaling Overview"
-                        className="full-width-image"
-                    />
+                    <h2>Journaling & Reflection</h2>
 
                     <p>
-                    Journaling has always been a personal and grounding practice for me,
-                    offering a way to make sense of scattered thoughts. But over time, 
-                    I found myself lacking a journaling space where I could write freely, 
-                    and one that also remained connected to the rest of my life: 
-                    readings from class, images I captured, assignments I completed, 
-                    moments I wanted to revisit. Most journaling apps felt either too 
-                    rigid or too disconnected from the broader context of my thinking.
-                    </p>
-
-                    <p>
-                    When I looked at Dash, I saw the beginnings of a solution. 
-                    It already offered the spatial flexibility and cross-media 
-                    linking I needed to anchor ideas across different formats. 
-                    That's what led me to build a
-                    dedicated journaling system within Dash—one that not only integrated 
-                    with my broader workspace, but also deepened my reflection and 
-                    helped push my thinking further.
+                    Journaling has always been a grounding practice for me,
+                    offering a way to make sense of scattered thoughts. However, 
+                    existing journaling apps felt too rigid, with pre-set prompts 
+                    and lacking the broader context of my thinking: from pictures I took that
+                    I wanted to journal about, to readings I completed that I wanted to reflect on. Thus, I built a dedicated journaling system 
+                    within Dash, one that not only integrated with my broader workspace, but also
+                    helped push my thinking.
                     </p>
 
                     <h3>Features</h3>
 
-                    <div className="feature-block feature-left">
+                    <div className="scroll-container horizontal-scroll-journaling">
+
+                    <div className="feature-card">
                     <img src="/images/Dash/journal-create.gif" alt="Daily Journal Node Creation" className="feature-gif" />
                     <p>
                         <strong>Daily Journal Nodes</strong> are customizable rich-text documents designed for daily 
@@ -75,7 +56,7 @@ export default function Dash() {
                     </p>
                     </div>
 
-                    <div className="feature-block feature-right">
+                    <div className="feature-card">
                     <img src="/images/Dash/generate.gif" alt="Prompt Generation" className="feature-gif" />
                     <p>
                         <strong>Custom Prompt Generation</strong> enables a more active journaling process.
@@ -86,7 +67,7 @@ export default function Dash() {
                     </p>
                     </div>
 
-                    <div className="feature-block feature-left">
+                    <div className="feature-card">
                     <img src="/images/Dash/inline.gif" alt="Inline Prompting" className="feature-gif" />
                     <p>
                         <strong>Inline Prompting</strong> introduces lightweight, contextual questions that appear naturally 
@@ -101,7 +82,7 @@ export default function Dash() {
                     </p>
                     </div>
 
-                    <div className="feature-block feature-right">
+                    <div className="feature-card">
                     <img src="/images/Dash/force.gif" alt="/ask trigger" className="feature-gif" />
                     <p>
                         <strong>Forcing a Prompt with <code>/ask</code></strong> lets you instantly request a new inline prompt 
@@ -114,21 +95,176 @@ export default function Dash() {
                         useful when you're feeling stuck or want to shift perspective.
                     </p>
                     </div>
+                    </div>
 
                 </section>
 
-                {/* Project 2 — Task Management (placeholder) */}
-                <section id="tasks" className="dash-section placeholder">
-                    <h2>Project 2 — Task Management</h2>
-                    <p>Details coming soon.</p>
+                <hr className="section-divider" />
+
+
+                {/* Project 2 */}
+                <section id="writing" className="dash-section placeholder horizontal-scroll">
+                <h2>Writing Augmentation</h2>
+
+                <p>
+                    Building on the success of predictive prompting in my journaling system, I began exploring how similar techniques could enhance the writing process itself.
+                    I developed a suite of writing assistance features in Dash that provide real-time, context-aware suggestions—helping users express ideas more clearly and refine their writing as they go.
+                </p>
+
+                <h3>Features</h3>
+
+                <div className="scroll-container">
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text_settings.gif" alt="Suggestions Sidebar" className="feature-gif" />
+                    <p>
+                    <strong>Suggestions Sidebar</strong>
+                    <br /><br />
+                    Each text node now includes an integrated sidebar where users can define their writing goals—such as tone, style, or intended impact.
+                    The system then generates targeted suggestions aligned with these goals, making writing assistance more personalized and relevant.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <img src="/images/Dash//text/text_master.gif" alt="Targeted Suggestions Highlighting" className="feature-gif" />
+                    <p>
+                    <strong>Targeted Suggestions</strong>
+                    <br /><br />
+                    Suggestions are specific, actionable, and visually anchored. Hovering over a suggestion highlights the corresponding portion of text,
+                    helping users clearly see what the suggestion refers to and how to apply it.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text_inline.gif" alt="Inline Suggestions" className="feature-gif" />
+                    <p>
+                    <strong>Inline Suggestions</strong>
+                    <br /><br />
+                    Users receive brief, non-intrusive inline prompts when they pause during writing—offering guidance without breaking their flow.
+                    These can also be triggered manually using the <code>//suggest</code> command.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text_bell.gif" alt="Active Suggestions" className="feature-gif" />
+                    <p>
+                        <strong>Active Suggestions</strong>
+                        <br /><br />
+                        In addition to manual prompts and inline nudges, users can enable an active writing assistant that continuously analyzes the text in real time.
+                        <br /><br />
+                        This mode acts like a thoughtful colleague looking over your shoulder, offering critiques as you type.
+                        Each suggestion is grounded in a specific passage or sentence, focusing on elements like clarity, tone, structure, and consistency.
+                    </p>
+                </div>
+
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text_scrolltext.gif" alt="Suggestion Storage" className="feature-gif" />
+                    <p>
+                        <strong>Suggestion Storage and Navigation</strong>
+                        <br /><br />
+                        Active suggestions are stored in a persistent sidebar log, keeping users' writing process uninterrupted while suggestions accumulate.
+                        <br /><br />
+                        In the text itself, small bubbles appear next to the specific passages each suggestion targets. These act as visual anchors: 
+                        clicking a bubble scrolls directly to the corresponding suggestion in the sidebar, and vice versa.
+                    </p>
+                </div>
+
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text-sugg-options.png" alt="Suggestion Resolution" className="feature-gif" />
+                    <p>
+                    <strong>Resolving Suggestions</strong>
+                    <br /><br />
+                    Users can interact with suggestions in several ways: resolve them, reject them (to prevent similar ones in the future), 
+                    or ask AI to apply an "auto-fix", rewriting the relevant passage.
+                    <br /><br />
+                    This adaptive feedback loop helps the assistant learn the user's writing style and preferences, 
+                    allowing it to improve over time.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text-suggestions-agent.png" alt="Suggestions Chatbot" className="feature-gif" />
+                    <p>
+                        <strong>Suggestions Chatbot</strong>
+                        <br /><br />
+                        Often, suggestions may seem vague, irrelevant, or even incorrect without further context.
+                        To address this, users can open a chat with the writing assistant to ask follow-up questions about any suggestion.
+                        <br /><br />
+                        The chatbot explains the reasoning behind the feedback, offers examples, 
+                        and allows users to understand their own writing patterns through natural conversation.
+                    </p>
+                </div>
+                <div className="scroll-spacer" />
+                </div>
                 </section>
 
-                {/* Project 3 — Writing Augmentation (placeholder) */}
-                <section id="writing" className="dash-section placeholder">
-                    <h2>Project 3 — Writing Augmentation</h2>
-                    <p>Details coming soon.</p>
+                <hr className="section-divider" />
+
+                {/* Project 3 */}
+                <section id="tasks" className="dash-section placeholder horizontal-scroll-task">
+                <h2>Task Management</h2>
+
+                <p>
+                    Staying organized is difficult when tasks live separately from the work they're tied to. 
+                    Most existing tools (like Google Tasks) have an unintuitive UI, lack full calendar integration, 
+                    and don't support contextual linking. So, I built Dash's task system to keep action items and 
+                    their context in one connected space and fill the gaps in existing task management tools.
+                </p>
+
+                <h3>Features</h3>
+
+                <div className="scroll-container">
+                    <div className="feature-card">
+                    <img
+                        src="/images/Dash/tasks/task.png"
+                        alt="Creating and completing a Task node"
+                        className="feature-gif"
+                    />
+                    <p>
+                        <strong>Create Tasks with Time Windows</strong>
+                        <br /><br />
+                        Add tasks directly to your dashboard with a title, description, and either an
+                        all-day flag or precise <em>start-end</em> times. Mark tasks complete with a built-in
+                        checkbox—fast capture, fast resolution.
+                    </p>
+                    </div>
+
+                    <div className="feature-card">
+                    <img
+                        src="/images/Dash/tasks/task_calendar.gif"
+                        alt="Task nodes shown in calendar view with drag-and-drop"
+                        className="feature-gif"
+                    />
+                    <p>
+                        <strong>Calendar View with Drag & Drop</strong>
+                        <br /><br />
+                        See tasks on a true calendar. Drag to reschedule, stretch to change duration,
+                        and check off items directly from the calendar. Everything stays in sync with the
+                        task node—no copy/paste, no duplication.
+                    </p>
+                    </div>
+
+                    <div className="feature-card">
+                    <img
+                        src="/images/Dash/tasks/task_links.png"
+                        alt="Task nodes linked to related documents in Dash"
+                        className="feature-gif"
+                    />
+                    <p>
+                        <strong>Tasks in a Hypermedia Space</strong>
+                        <br /><br />
+                        Link a task to the exact artifacts it references—an essay draft, a PDF, a lecture
+                        video, a notes doc, or a slideshow. Open-in-place, jump back via backlinks, and keep
+                        the “to-do” tethered to the “why.”
+                    </p>
+                    </div>
+
+                    <div className="scroll-spacer" />
+                </div>
                 </section>
-            </div>
+
+                </div>
             </Page>
         </>
     );

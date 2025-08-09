@@ -15,8 +15,10 @@ export function ProjectsSection(props: PageSection): React.ReactElement {
     return (
         <Animation type="fadeIn">
             <div className='SectionWrapper'>
+                
             <Section anchor={props.sectionId} heading={props.heading}>
                 <div className="ProjectsContainer">
+                <p>Click on a project image or link icons to learn more!</p>
                     <Slider additionalClasses={["Projects"]}>
                         {data.projects.map((project, key) => {
                             return project.visible ? <Project key={key} index={key} data={project} /> : null;
