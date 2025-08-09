@@ -22,10 +22,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
       - run: npm ci
       - run: npx gatsby telemetry --disable || true
+      - run: npm run clean
       - run: npm run build
+      # Ensure GitHub Pages doesn't run Jekyll and ignore files
+      - run: touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
