@@ -23,7 +23,7 @@ export default function VrEarthquake() {
                             className="eq-carousel"
                         >
                             <div>
-                                <img src="/images/VREarthquake/vr.JPG" alt="AR Earthquake Visualization" />
+                                <img src="/images/VREarthquake/vr.jpg" alt="AR Earthquake Visualization" />
                             </div>
                             <div>
                                 <img src="/images/VREarthquake/tabl-viz.jpg" alt="AR Earthquake Visualization Tabletop View" />
