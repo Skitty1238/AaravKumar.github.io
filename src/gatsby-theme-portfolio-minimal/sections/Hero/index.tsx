@@ -63,22 +63,22 @@ export function HeroSection(props: PageSection): React.ReactElement {
                         type: 'image',
                         image: [
                             {
-                                src: '/images/leafRed.PNG',
+                                src: '/images/leafRed.png',
                                 width: 100,
                                 height: 100
                             },
                             {
-                                src: '/images/leafGreen.PNG',
+                                src: '/images/leafGreen.png',
                                 width: 100,
                                 height: 100
                             },
                             {
-                                src: '/images/leafYellow.PNG',
+                                src: '/images/leafYellow.png',
                                 width: 100,
                                 height: 100
                             },
                             {
-                                src: '/images/leafOrange.PNG',
+                                src: '/images/leafOrange.png',
                                 width: 100,
                                 height: 100
                             },
