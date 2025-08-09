@@ -225,8 +225,8 @@ export default function Dash() {
                         <strong>Create Tasks with Time Windows</strong>
                         <br /><br />
                         Add tasks directly to your dashboard with a title, description, and either an
-                        all-day flag or precise <em>start-end</em> times. Mark tasks complete with a built-in
-                        checkbox—fast capture, fast resolution.
+                        all-day flag or precise start-end times. Mark tasks complete to prevent future 
+                        changes by collaborators.
                     </p>
                     </div>
 
@@ -239,9 +239,9 @@ export default function Dash() {
                     <p>
                         <strong>Calendar View with Drag & Drop</strong>
                         <br /><br />
-                        See tasks on a true calendar. Drag to reschedule, stretch to change duration,
-                        and check off items directly from the calendar. Everything stays in sync with the
-                        task node—no copy/paste, no duplication.
+                        See tasks in a custom calendar view. Drag to reschedule, stretch to change duration,
+                        and check off items directly from the calendar. You can also sync your tasks to Google Tasks,
+                        automatically seeing updates on either end whenever a task is created, changed, or deleted.
                     </p>
                     </div>
 
@@ -254,9 +254,9 @@ export default function Dash() {
                     <p>
                         <strong>Tasks in a Hypermedia Space</strong>
                         <br /><br />
-                        Link a task to the exact artifacts it references—an essay draft, a PDF, a lecture
-                        video, a notes doc, or a slideshow. Open-in-place, jump back via backlinks, and keep
-                        the “to-do” tethered to the “why.”
+                        With Dash, you can link a task to the exact artifacts it references: whether an essay draft, a PDF, a lecture
+                        video, a notes doc, or a slideshow. Opening tasks directly in context of other documents streamlines your workflow,
+                        allowing you to focus on tasks without losing sight of their background.
                     </p>
                     </div>
 
