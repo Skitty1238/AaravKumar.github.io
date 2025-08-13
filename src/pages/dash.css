@@ -20,6 +20,12 @@
     margin-bottom: 1rem;
     line-height: 1.2;
     animation: dashFadeInCenter 1s ease forwards;
+    color: rgb(0, 79, 169);
+}
+@media (prefers-color-scheme: dark) {
+  .dash-wrapper h1 {
+      color: rgb(61, 144, 240); /* Dark mode color */
+  }
 }
 
 .dash-wrapper h3 {
@@ -217,10 +223,32 @@
     color: black;
     opacity: 1;
     background: black;
-    width: 100%;
+    width: 90%;
     max-width: 900px;
     margin-bottom: 5rem;
     margin-top: -2rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .section-divider {
+      color: white; /* Dark mode color */
+      background: white;
+    }
+  }
+  @media (max-width: 1000px) {
+    .section-divider {
+      margin-left: 3rem;
+    }
+  }
+  @media (max-width: 950px) {
+    .section-divider {
+      margin-left: 2rem;
+    }
+  }
+  @media (max-width: 900px) {
+    .section-divider {
+      margin-left: 1rem;
+    }
   }
 
 @media (max-width: 768px) {

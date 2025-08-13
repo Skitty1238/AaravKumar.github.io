@@ -195,7 +195,7 @@ export default function Dash() {
                         and allows users to understand their own writing patterns through natural conversation.
                     </p>
                 </div>
-                <div className="scroll-spacer" />
+                {/* <div className="scroll-spacer" /> */}
                 </div>
                 </section>
 
